@@ -210,4 +210,218 @@
     <!-- Cards -->
   </div>
 </main>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgroApp - Projeto Agrinho 2025</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8f5;
+      color: #333;
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .login {
+      text-align: right;
+      padding: 10px 20px;
+      background-color: #e8f5e9;
+    }
+
+    .login button {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login button:hover {
+      background-color: #1b5e20;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .info {
+      padding: 15px;
+    }
+
+    .info img {
+      width: 30px;
+      vertical-align: middle;
+    }
+
+    .info p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .info button {
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .info button:hover {
+      background-color: #2e7d32;
+    }
+
+    .hidden-text {
+      display: none;
+      margin-top: 10px;
+      color: #444;
+      font-size: 0.95rem;
+      background: #e8f5e9;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AgroApp</h1>
+    <p>Conexão Campo-Cidade | Projeto Agrinho 2025</p>
+  </header>
+
+  <div class="login">
+    <button onclick="alert('Login ainda não implementado')">Login</button>
+  </div>
+
+  <main>
+    <section>
+      <h2>Bem-vindo ao AgroApp</h2>
+      <p>O AgroApp conecta o produtor rural ao consumidor urbano, promovendo um espaço de informações, comércio e comunicação. Uma ponte entre o campo e a cidade.</p>
+    </section>
+
+    <!-- NOVA SEÇÃO ADICIONADA AQUI -->
+    <section>
+      <h2 style="color: #2e7d32; text-align: center;">Campo x Cidade: Uma Relação de Cooperação</h2>
+      <p style="text-align: justify; max-width: 900px; margin: 0 auto;">
+        O campo e a cidade são diferentes em suas paisagens, rotinas e funções, mas compartilham algo essencial: a necessidade um do outro.
+        <br><br>
+        Enquanto o campo é o berço da produção de alimentos, fibras, água e energia, a cidade transforma, distribui e consome o que o campo produz. O campo oferece sustento; a cidade oferece tecnologia, conhecimento e oportunidades de mercado.
+        <br><br>
+        Essa cooperação vai além da economia. Ela envolve cultura, educação e sustentabilidade. A cidade depende do campo para se alimentar, e o campo conta com os avanços urbanos para evoluir — como a internet, máquinas modernas e acesso à informação.
+        <br><br>
+        Por isso, fortalecer essa conexão é investir em um futuro mais equilibrado, onde todos ganham. Com respeito, inovação e diálogo, campo e cidade caminham juntos para transformar o Brasil.
+      </p>
+    </section>
+
+    <div class="container">
+
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/wheat-1378781_1280.jpg" alt="Notícias da Agricultura">
+        <div class="info">
+          <img src="https://cdn-icons-png.flaticon.com/512/1996/1996077.png" alt="Trator">
+          <p>Notícias da Agricultura</p>
+          <button onclick="toggleText('texto1')">Ler Mais</button>
+          <div id="texto1" class="hidden-text">
+            Acompanhe as últimas notícias sobre produção, clima, safras, novas tecnologias no campo e dicas de cultivo sustentável.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/09/15/supermarket-1869791_1280.jpg" alt="Marketplace Urbano">
+        <div class="info">
+          <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Mercado">
+          <p>Marketplace Urbano</p>
+          <button onclick="toggleText('texto2')">Acessar</button>
+          <div id="texto2" class="hidden-text">
+            Compre direto do produtor rural! Hortaliças, frutas, laticínios e muito mais, entregues com qualidade e rapidez.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/06/28/08/35/agriculture-2456098_1280.jpg" alt="Feedback">
+        <div class="info">
+          <img src="https://cdn-icons-png.flaticon.com/512/2099/2099191.png" alt="Feedback">
+          <p>Envie seu Feedback</p>
+          <button onclick="toggleText('texto3')">Enviar</button>
+          <div id="texto3" class="hidden-text">
+            Sua opinião é muito importante! Deixe sugestões ou comentários sobre como podemos melhorar o AgroApp.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Desenvolvido para o Projeto Agrinho 2025 - Conexão Campo-Cidade</p>
+  </footer>
+
+  <script>
+    function toggleText(id) {
+      const element = document.getElementById(id);
+      element.style.display = element.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
 
