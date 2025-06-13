@@ -129,3 +129,178 @@
 </head>
 <body>
   <he
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroApp - Projeto Agrinho 2025</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8f5;
+      color: #333;
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .login {
+      text-align: right;
+      padding: 10px 20px;
+      background-color: #e8f5e9;
+    }
+
+    .login button {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login button:hover {
+      background-color: #1b5e20;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .info {
+      padding: 15px;
+    }
+
+    .info img {
+      width: 30px;
+      vertical-align: middle;
+    }
+
+    .info p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .info button {
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .info button:hover {
+      background-color: #2e7d32;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AgroApp</h1>
+    <p>Conexão Campo-Cidade | Projeto Agrinho 2025</p>
+  </header>
+
+  <div class="login">
+    <button onclick="alert('Login ainda não implementado')">Login</button>
+  </div>
+
+  <main>
+    <section>
+      <h2>Bem-vindo ao AgroApp</h2>
+      <p>O AgroApp conecta o produtor rural ao consumidor urbano, promovendo um espaço de informações, comércio e comunicação. Uma ponte entre o campo e a cidade.</p>
+    </section>
+
+    <div class="container">
+
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/wheat-1378781_1280.jpg" alt="Notícias da Agricultura">
+        <div class="info">
+          <img src="https://cdn-icons-png.flaticon.com/512/1996/1996077.png" alt="Trator">
+          <p>Notícias da Agricultura</p>
+          <button onclick="alert('Abrindo notícias...')">Acessar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/09/15/supermarket-1869791_1280.jpg" alt="Marketplace Urbano">
+        <div class="info">
+          <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Mercado">
+          <p>Marketplace Urbano</p>
+          <button onclick="alert('Acessando marketplace...')">Comprar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/06/28/08/35/agriculture-2456098_1280.jpg" alt="Mensagens">
+        <div class="info">
+          <img src="https://cdn-icons-png.flaticon.com/512/2099/2099191.png" alt="Mensagens">
+          <p>Mensagens</p>
+          <button onclick="alert('Abrindo mensagens...')">Conversar</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Desenvolvido para o Projeto Agrinho 2025 - Conexão Campo-Cidade</p>
+  </footer>
+</body>
+</html>
